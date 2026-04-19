@@ -153,7 +153,7 @@ const RegisterPage = () => {
             {/* Google */}
             <button
               type="button"
-              onClick={() => window.location.href = 'http://localhost:5000/api/auth/google'}
+              onClick={() => window.location.href = `${import.meta.env.VITE_API_URL}/auth/google`}
               className="w-full flex items-center justify-center gap-3 border border-gray-200 rounded-2xl py-3 px-4 hover:bg-gray-50 hover:border-gray-300 transition-all duration-200 mb-5 font-semibold text-gray-700 text-sm"
             >
               <GoogleIcon />
